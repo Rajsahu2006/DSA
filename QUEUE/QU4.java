@@ -1,0 +1,23 @@
+package QUEUE;
+
+import java.util.*;
+
+//Implementation using Java collection FrameWork::
+public class QU4 {
+    public static void main(String[] args) {
+        // Queue<Integer> q =new LinkedList<>();    // Queue is a Interface x class,Linkedlist is a class.
+        Queue<Integer> q =new ArrayDeque();
+        
+        q.add(1);
+        q.add(3);
+        q.add(4);
+        q.add(5);
+
+        while ( !q.isEmpty()) {
+            System.out.println(q.peek());
+            q.remove();
+            
+        }
+    }
+    
+}
